@@ -5,7 +5,7 @@ Este projeto esta organizado como um workspace Maven multi-modulo. O objetivo e 
 ## 1. Estrutura do projeto
 
 ```text
-crud_generator_opcao2/
+projeto_oo/
 ├── pom.xml
 ├── framework/
 │   ├── pom.xml
@@ -75,7 +75,7 @@ Esse modulo tambem depende do `framework` via Maven.
 Abra a pasta raiz do projeto no VS Code:
 
 ```text
-crud_generator_opcao2
+projeto_oo
 ```
 
 Nao abra diretamente `crud-generator/`, porque o VS Code pode nao reconhecer o projeto multi-modulo inteiro.
