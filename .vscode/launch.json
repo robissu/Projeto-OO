@@ -1,0 +1,48 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CRUD Generator - interativo",
+      "request": "launch",
+      "mainClass": "generator.GeneratorMain",
+      "projectName": "crud-generator",
+      "vmArgs": "-Dfile.encoding=UTF-8"
+    },
+    {
+      "type": "java",
+      "name": "CRUD Generator - criar banco de exemplo",
+      "request": "launch",
+      "mainClass": "generator.GeneratorMain",
+      "projectName": "crud-generator",
+      "vmArgs": "-Dfile.encoding=UTF-8",
+      "args": "--create-sample ${workspaceFolder}/sample-data/vetclinic.db"
+    },
+    {
+      "type": "java",
+      "name": "CRUD Generator - exemplo DatabaseMetaData",
+      "request": "launch",
+      "mainClass": "generator.GeneratorMain",
+      "projectName": "crud-generator",
+      "vmArgs": "-Dfile.encoding=UTF-8",
+      "args": "--metadata-example ${workspaceFolder}/sample-data/vetclinic.db"
+    },
+    {
+      "type": "java",
+      "name": "CRUD Generator - batch",
+      "request": "launch",
+      "mainClass": "generator.GeneratorMain",
+      "projectName": "crud-generator",
+      "vmArgs": "-Dfile.encoding=UTF-8",
+      "args": "${workspaceFolder}/sample-data/vetclinic.db ${workspaceFolder}/output"
+    },
+    {
+      "type": "java",
+      "name": "VetClinic Example - framework",
+      "request": "launch",
+      "mainClass": "app.Main",
+      "projectName": "vetclinic-example",
+      "vmArgs": "-Dfile.encoding=UTF-8"
+    }
+  ]
+}

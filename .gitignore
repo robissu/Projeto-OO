@@ -1,0 +1,8 @@
+target/
+.vscode/.classpath
+.vscode/.project
+.vscode/.settings/
+output/
+sample-data/*.db
+*.db-journal
+*.sqlite-journal
